@@ -32,6 +32,7 @@ Step 2 :  Goto the directory where you want to clone git repository & Enter belo
 
 
 ## 3. Create New Branch
+
       To create a new local branch : Open terminal in aurora file [internal_proj/ip_dev_ulka/aurora]                                                   
       and write the following command
       
@@ -43,6 +44,7 @@ Step 2 :  Goto the directory where you want to clone git repository & Enter belo
             >>> git branch
 
 ## 4. checkout to created branch
+
      To switch to a given local branch:
      
        >>> git checkout  <branch_name>

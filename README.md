@@ -33,13 +33,13 @@ Step 2 :  Goto the directory where you want to clone git repository & Enter belo
 
 ## 3. Create New Branch
 
-      To create a new local branch : Open terminal in aurora file [internal_proj/ip_dev_ulka/aurora]                                                   
-      and write the following command
+To create a new local branch : Open terminal in aurora file [internal_proj/ip_dev_ulka/aurora]                                                   
+and write the following command
       
             >> git branch <branch_name>
             Example: >>git branch dv_sim_branch
      
-      To list all local branches: ( current branch)
+To list all local branches: ( current branch)
       
             >>> git branch
 

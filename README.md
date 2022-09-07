@@ -12,7 +12,7 @@
            
  Step 3 : Enter the below command. And copy everything.
  
-          >>> cat ~/.ssh/id_ecdsa.pub
+          $ cat ~/.ssh/id_ecdsa.pub
     
 Example : 
 “ecdsasha2nistp521AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBAD1lT+lsMYGCjjiLQjUUM23erXD8yy4hc7REtCA0ZZO8+fG0MdK6ZCPwtYTgerxw9e796v57A8OCbcBbX5/fYnZzAGHJka+TRxcuYtsFeaGpA/mefyscldpQf8I1lHtB9266uPii3MM7fIjwOJmk954XI9J70oLUmLNcxpzw2wHps8iXQ==your_email@ulkasemi.com”  copy this.
@@ -27,8 +27,8 @@ Step 1 : Copy repo-ssh-link
 
 Step 2 :  Goto the directory where you want to clone git repository & Enter below command
 
-          >>> git clone <repo_ssh_link>          
-          Example: >>> git clone git@github.com:Md-jahedul-Ulkasemi/git_test.git
+          $ git clone <repo_ssh_link>          
+          Example: $ git clone git@github.com:Md-jahedul-Ulkasemi/git_test.git
 
 
 ## 3. Create New Branch
@@ -36,19 +36,19 @@ Step 2 :  Goto the directory where you want to clone git repository & Enter belo
 To create a new local branch : Open terminal in aurora file [internal_proj/ip_dev_ulka/aurora]                                                   
 and write the following command
       
-            >> git branch <branch_name>
-            Example: >>git branch dv_sim_branch
+            $ git branch <branch_name>
+            Example: $ git branch dv_sim_branch
      
 To list all local branches: ( current branch)
       
-            >>> git branch
+            $ git branch
 
 ## 4. checkout to created branch
 
 To switch to a given local branch:
      
-       >>> git checkout  <branch_name>
-       Example: >>> git checkout  dv_sim_branch
+       $ git checkout  <branch_name>
+       Example: $ git checkout  dv_sim_branch
      
 ## 5. load Tools on Server
 
@@ -56,11 +56,11 @@ To switch to a given local branch:
  
  Step 1: Write command : 
  
-        >> csh 
+        $ csh 
  
  Step 2: Write command : 
  
-        >> source /silicon/cshrc
+        $ source /silicon/cshrc
  
 ## 6. Run Script: 
 

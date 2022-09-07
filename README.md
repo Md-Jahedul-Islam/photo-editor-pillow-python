@@ -34,14 +34,17 @@ Step 2 :  Goto the directory where you want to clone git repository & Enter belo
 ## 3. Create New Branch
       To create a new local branch : Open terminal in aurora file [internal_proj/ip_dev_ulka/aurora]                                                   
       and write the following command
+      
       >> git branch <branch_name>
       Example: >>git branch dv_sim_branch
      
       To list all local branches: ( current branch)
+      
       >>> git branch
 
 ## 4. checkout to created branch
      To switch to a given local branch:
+     
      >>> git checkout  <branch_name>
      Example: >>> git checkout  dv_sim_branch
      
@@ -49,9 +52,13 @@ Step 2 :  Goto the directory where you want to clone git repository & Enter belo
 
  Server Address: 192.168.10.96
  
- Step 1: Write command : csh 
+ Step 1: Write command : 
  
- Step 2: source /silicon/cshrc
+        >>csh 
+ 
+ Step 2: Write command : 
+ 
+        >>source /silicon/cshrc
  
 ## 6. Run Script: 
 

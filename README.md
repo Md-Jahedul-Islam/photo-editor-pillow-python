@@ -5,7 +5,7 @@
 
  Step 1: Open terminal from anywhere. Enter the below command.
  
-         >>> ssh-keygen -t ecdsa -b 521 -C “your_email@ulkasemi.com”
+         $ ssh-keygen -t ecdsa -b 521 -C “your_email@ulkasemi.com”
           
  Step 2 :  Press Enter and type Password. 
            Example: ulka1234

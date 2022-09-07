@@ -58,8 +58,12 @@ Step 2 : Script can be run in 4 different modes.
 
 | Mode | Command | Example |
 |------|---------|---------|
-| Batch | ./runscript.sh -b  <testname> <verbosity> | ./runscript.sh -b  uart_txd_test  UVM_NONE |
-| GUI | ./runscript.sh -g  <testname> <verbosity> | ./runscript.sh -g  uart_txd_test  UVM_NONE |
-| Coverage | ./runscript.sh -c  <testname> <verbosity> | ./runscript.sh -g  uart_rxd_test  UVM_NONE |
-| Regression | ./runscript.sh -c  <testname> <verbosity> | ./runscript.sh -g  uart_rxd_test  UVM_NONE |
+| Batch      | ./runscript.sh -b  <testname> <verbosity>      | ./runscript.sh -b  uart_txd_test  UVM_NONE |
+| GUI        | ./runscript.sh -g  <testname> <verbosity>        | ./runscript.sh -g  uart_txd_test  UVM_NONE |
+| Coverage   | ./runscript.sh -c  <testname> <verbosity>   | ./runscript.sh -c  uart_rxd_test  UVM_NONE |
+| Regression | ./runscript.sh -c  <testname> <verbosity> | /runscript.sh -r testlist.txt 5 |
+    
+Here testlist can be a text file input where several testname are written
+& nth jobs mean the number of tests will run parallely. 
+
 

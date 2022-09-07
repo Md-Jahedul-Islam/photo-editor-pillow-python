@@ -19,7 +19,7 @@ Example :
 
 Step 4 : Goto GitHub Setting > SSH and GPG Keys 
 
-Click on New SSH Key > Paste your ssh-key > Add SSH key
+Click on New + SSH Key > Paste your ssh-key > Add SSH key
 
 ## 2. Clone Git
 

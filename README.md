@@ -1,4 +1,4 @@
-# Verification Simulation Guide for AHB_UART
+# Simulation Guide for AHB_UART
 
 
 ## 1. Setup ssh
@@ -19,7 +19,7 @@ Example :
 
 Step 4 : Goto GitHub Setting > SSH and GPG Keys 
 
-+ text in greren Click on New  SSH Key > Paste your ssh-key > Add SSH key
++ Click on New  SSH Key > Paste your ssh-key > Add SSH key
 
 ## 2. Clone Git
 
@@ -34,7 +34,8 @@ Step 2 :  Goto the directory where you want to clone git repository & Enter belo
 ## 3. Create New Branch
       To create a new local branch : Open terminal in aurora file [internal_proj/ip_dev_ulka/aurora]                                                   
       and write the following command
-      >>git branch <branch_name>
+      >> git branch <branch_name>
+      Example: >>git branch dv_sim_branch
      
       To list all local branches: ( current branch)
       >>> git branch
@@ -42,6 +43,7 @@ Step 2 :  Goto the directory where you want to clone git repository & Enter belo
 ## 4. checkout to created branch
      To switch to a given local branch:
      >>> git checkout  <branch_name>
+     Example: >>> git checkout  dv_sim_branch
      
 ## 5. load Tools on Server
 
@@ -56,13 +58,14 @@ Step 2 :  Goto the directory where you want to clone git repository & Enter belo
 Step 1 : Change Directory to /silicon_engineering/project/micro_controller/ip_verification/mpw1/AHB_UART/dv/sim
 
 Step 2 : Script can be run in 4 different modes. 
- i.  Batch Mode
+
+     i.  Batch Mode
  
- ii. GUI Mode
+     ii. GUI Mode
  
- iii. Coverage Mode
+     iii. Coverage Mode
  
- Iv. Regression Mode
+     Iv. Regression Mode
  
 ### Usage:
 

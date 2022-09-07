@@ -1,7 +1,7 @@
 # Verification Simulation Guide for AHB_UART
 
 
-##1. Setup ssh
+## 1. Setup ssh
 
 Step 1: Open terminal from anywhere. Enter the below command.
 
@@ -19,14 +19,14 @@ Step 4 : Goto GitHub Setting > SSH and GPG Keys
 
 Click on New SSH Key > Paste your ssh-key > Add SSH key
 
-##2. Clone Git
+## 2. Clone Git
 
 Step 1 : Copy repo-ssh-link 
 Step 2 :  Write the following command on the terminal
              >>> git clone <repo-ssh-link>
 
 
-##3. Create New Branch
+## 3. Create New Branch
       To create a new local branch : Open terminal in aurora file [internal_proj/ip_dev_ulka/aurora]                                                   
       and write the following command
       >>git branch <branch_name>
@@ -34,17 +34,17 @@ Step 2 :  Write the following command on the terminal
       To list all local branches: ( current branch)
       >>> git branch
 
-##4. checkout to created branch
+## 4. checkout to created branch
      To switch to a given local branch:
      >>> git checkout  <branch_name>
      
-##5. load Tools on 96 Server
+## 5. load Tools on 96 Server
 
  Server Address: 192.168.10.96
  Step 1: Write command : csh 
  Step 2: source /silicon/cshrc
  
-##6. Run Script: 
+## 6. Run Script: 
 
 Step 1 : Change Directory to /silicon_engineering/project/micro_controller/ip_verification/mpw1/AHB_UART/dv/sim
 
@@ -54,12 +54,12 @@ Step 2 : Script can be run in 4 different modes.
  iii. Coverage Mode
  Iv. Regression Mode
  
-###Usage:
+### Usage:
 
-|     Mode   |    Command        |          Example           |
-----------------------------------------------------------
-| Batch      | ./runscript.sh -b  <testname> <verbosity> | ./runscript.sh -b  uart_txd_test  UVM_NONE |
-| GUI        | ./runscript.sh -g  <testname> <verbosity> | ./runscript.sh -g  uart_txd_test  UVM_NONE |
-| Coverage   | ./runscript.sh -c  <testname> <verbosity> | ./runscript.sh -g  uart_rxd_test  UVM_NONE |
+| Mode | Command | Example |
+|------|---------|---------|
+| Batch | ./runscript.sh -b  <testname> <verbosity> | ./runscript.sh -b  uart_txd_test  UVM_NONE |
+| GUI | ./runscript.sh -g  <testname> <verbosity> | ./runscript.sh -g  uart_txd_test  UVM_NONE |
+| Coverage | ./runscript.sh -c  <testname> <verbosity> | ./runscript.sh -g  uart_rxd_test  UVM_NONE |
 | Regression | ./runscript.sh -c  <testname> <verbosity> | ./runscript.sh -g  uart_rxd_test  UVM_NONE |
 

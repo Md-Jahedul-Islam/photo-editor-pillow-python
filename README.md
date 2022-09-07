@@ -23,9 +23,9 @@ Click on New SSH Key > Paste your ssh-key > Add SSH key
 
 Step 1 : Copy repo-ssh-link 
 
-Step 2 :  Write the following command on the terminal
-          >>> git clone <repo_ssh_link>
-          
+Step 2 :  Goto the directory where you want to clone git repository & Enter below command
+
+          >>> git clone <repo_ssh_link>          
           Example: >>> git clone git@github.com:Md-jahedul-Ulkasemi/git_test.git
 
 

@@ -4,11 +4,11 @@
 ## 1. Setup ssh
 
  Step 1: Open terminal from anywhere. Enter the below command.
-         >>> ssh-keygen -t ecdsa -b 521 -C “your_email@ulkasemi.com”
+         >> ssh-keygen -t ecdsa -b 521 -C “your_email@ulkasemi.com”
  Step 2 :  Press Enter and type Password. 
            Example: ulka1234
-Step 3 : Enter the below command. And copy everything.
-         >>> cat ~/.ssh/id_ecdsa.pub
+ Step 3 : Enter the below command. And copy everything.
+          >> cat ~/.ssh/id_ecdsa.pub
 
 Example : 
 “ecdsasha2nistp521AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBAD1lT+lsMYGCjjiLQjUUM23erXD8yy4hc7REtCA0ZZO8+fG0MdK6ZCPwtYTgerxw9e796v57A8OCbcBbX5/fYnZzAGHJka+TRxcuYtsFeaGpA/mefyscldpQf8I1lHtB9266uPii3MM7fIjwOJmk954XI9J70oLUmLNcxpzw2wHps8iXQ==your_email@ulkasemi.com”  copy this.

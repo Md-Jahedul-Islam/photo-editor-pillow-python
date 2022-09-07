@@ -57,7 +57,7 @@ Step 2 : Script can be run in 4 different modes.
 ### Usage:
 
 | Mode | Command | Example |
-|------|---------|---------|
+|------|------------------------------------------------------|---------|
 | Batch      | ./runscript.sh -b  <testname> <verbosity>      | ./runscript.sh -b  uart_txd_test  UVM_NONE |
 | GUI        | ./runscript.sh -g  <testname> <verbosity>        | ./runscript.sh -g  uart_txd_test  UVM_NONE |
 | Coverage   | ./runscript.sh -c  <testname> <verbosity>   | ./runscript.sh -c  uart_rxd_test  UVM_NONE |

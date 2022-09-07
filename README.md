@@ -41,7 +41,9 @@ Step 2 :  Write the following command on the terminal
 ## 5. load Tools on Server
 
  Server Address: 192.168.10.96
+ 
  Step 1: Write command : csh 
+ 
  Step 2: source /silicon/cshrc
  
 ## 6. Run Script: 
@@ -50,18 +52,21 @@ Step 1 : Change Directory to /silicon_engineering/project/micro_controller/ip_ve
 
 Step 2 : Script can be run in 4 different modes. 
  i.  Batch Mode
+ 
  ii. GUI Mode
+ 
  iii. Coverage Mode
+ 
  Iv. Regression Mode
  
 ### Usage:
 
-| Mode       |          Command                               |             Example                        |
-|------      |------------------------------------------------|--------------------------------------------|
-| Batch      | ./runscript.sh -b  <testname> <verbosity>      | ./runscript.sh -b  uart_txd_test  UVM_NONE |
-| GUI        | ./runscript.sh -g  <testname> <verbosity>      | ./runscript.sh -g  uart_txd_test  UVM_NONE |
-| Coverage   | ./runscript.sh -c  <testname> <verbosity>      | ./runscript.sh -c  uart_rxd_test  UVM_NONE |
-| Regression | ./runscript.sh -c  <testname> <verbosity>      | ./runscript.sh -r testlist.txt 5            |
+| Mode       |          Command                               | 
+|------------|------------------------------------------------|
+| Batch      | ./runscript.sh -b  <testname> <verbosity>      | 
+| GUI        | ./runscript.sh -g  <testname> <verbosity>      | 
+| Coverage   | ./runscript.sh -c  <testname> <verbosity>      | 
+| Regression | ./runscript.sh -c  <testname> <verbosity>      | 
     
 Here testlist can be a text file input where several testname are written
 & nth jobs mean the number of tests will run parallely. 

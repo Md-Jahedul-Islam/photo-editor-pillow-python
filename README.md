@@ -45,7 +45,7 @@ To list all local branches: ( current branch)
 
 ## 4. checkout to created branch
 
-     To switch to a given local branch:
+To switch to a given local branch:
      
        >>> git checkout  <branch_name>
        Example: >>> git checkout  dv_sim_branch
@@ -68,13 +68,13 @@ Step 1 : Change Directory to /silicon_engineering/project/micro_controller/ip_ve
 
 Step 2 : Script can be run in 4 different modes. 
 
-     i.  Batch Mode
+ i.  Batch Mode
  
-     ii. GUI Mode
+ ii. GUI Mode
  
-     iii. Coverage Mode
+ iii. Coverage Mode
  
-     Iv. Regression Mode
+ Iv. Regression Mode
  
 ### Usage:
 

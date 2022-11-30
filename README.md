@@ -66,7 +66,7 @@ To switch to a given local branch:
 
 Step 1 : Change Directory to /aurora/ips/uart/dv/sim
 
-Step 2 : Resolve bad interpretter issue using following command:
+Step 2 : Resolve bad interpreter issue using following command:
 
             sed -i -e 's/\r$//' runscript.sh
             

@@ -115,20 +115,24 @@ Step 4 : Script can be run in 4 different modes.
 
 Step 1: Write the following command to open the  EManger tool
 
-           $ emanager &
+           $emanager &
            
 Step 2: Click setup from the pop up emanger window to setup the regression.
 
 Step 3: Press "start" button to start a regression.
 
-Step 4: After that a Start session window will pop up, from where select & open the regression.vsif file.
+Step 4: After that a Start session dialogue box will appear, from where select & open the regression.vsif file.
 
 Step 5: To see the progress press refresh button & wait for progress to be 100%.
  
-Step 6: To see coverage report press "vplan" and press "ok" to pop up window.
+Step 6: To see coverage report press "vplan" and press "ok" to pop up dialogue box.
 
 Step 7: It will cause to apper another dialogue box called "Automatic Coverage merge", from where select (merge coverage). ALso have to select the "Show this dialogue again" before press Ok.
  
  
  
 
+## Author 
+
+ + Name  : Mahade Hasan
+ + Email : mahade@ulkasemi.com

@@ -69,11 +69,11 @@ To switch to a given local branch:
  
   Step 1: Source cshrc_ius15 : 
  
-        $ source /tools/script.cshrc_ius15 
+        $ source /tools/script/cshrc_ius15 
  
  Step 2: Source cshrc : 
  
-        $ source /tools/script.cshrc
+        $ source /tools/script/cshrc
  
 ## 6. Run Script: 
 

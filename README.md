@@ -17,7 +17,7 @@
 Example : 
 “ecdsasha2nistp521AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBAD1lT+lsMYGCjjiLQjUUM23erXD8yy4hc7REtCA0ZZO8+fG0MdK6ZCPwtYTgerxw9e796v57A8OCbcBbX5/fYnZzAGHJka+TRxcuYtsFeaGpA/mefyscldpQf8I1lHtB9266uPii3MM7fIjwOJmk954XI9J70oLUmLNcxpzw2wHps8iXQ==your_email@ulkasemi.com”  copy this.
 
-Step 4 : Goto GitHub Setting > SSH and GPG Keys 
+Step 4 : Go to GitHub Setting > SSH and GPG Keys 
 
 + Click on New  SSH Key > Paste your ssh-key > Add SSH key
 
@@ -63,7 +63,8 @@ To switch to a given local branch:
  Step 2: Source cshrc : 
  
         $ source /silicon/cshrc
-        
+
+
  Server Address: 192.168.5.90
  
   Step 1: Source cshrc_ius15 : 

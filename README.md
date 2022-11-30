@@ -58,17 +58,17 @@ To switch to a given local branch:
  
         $ csh 
  
- Step 2: Write command : 
+ Step 2: Source cshrc : 
  
         $ source /silicon/cshrc
         
  Server Address: 192.168.5.90
  
-  Step 1: Write command : 
+  Step 1: Source cshrc_ius15 : 
  
         $ source /tools/script.cshrc_ius15 
  
- Step 2: Write command : 
+ Step 2: Source cshrc : 
  
         $ source /tools/script.cshrc
  
@@ -123,5 +123,12 @@ Step 3: Press "start" button to start a regression.
 
 Step 4: After that a Start session window will pop up, from where select & open the regression.vsif file.
 
-Step 5: 
+Step 5: To see the progress press refresh button & wait for progress to be 100%.
+ 
+Step 6: To see coverage report press "vplan" and press "ok" to pop up window.
+
+Step 7: It will cause to apper another dialogue box called "Automatic Coverage merge", from where select (merge coverage). ALso have to select the "Show this dialogue again" before press Ok.
+ 
+ 
+ 
 

@@ -67,9 +67,11 @@ To switch to a given local branch:
 Step 1 : Change Directory to /aurora/ips/uart/dv/sim
 
 Step 2 : Resolve bad interpretter issue using following command:
+
             sed -i -e 's/\r$//' runscript.sh
             
 Step 3 : Set Working Directory with the following command:
+
              export MY_WORKING_DIR=$PWD or setenv MY_WORKING_DIR $PWD
              
 Step 4 : Script can be run in 4 different modes. 

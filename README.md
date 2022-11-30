@@ -98,5 +98,8 @@ Step 4 : Script can be run in 4 different modes.
 #### Script can be run with only the follow argument. Rest of the arguments are set default value in script.
  
             $(basename $0) -<b/g/c> -t_name <testname>
+ 
+ 
+ ## 6. E Manager: 
 
 

@@ -64,8 +64,11 @@ To switch to a given local branch:
  
 ## 6. Run Script: 
 
-Step 1 : Change Directory to /silicon_engineering/project/micro_controller/ip_verification/mpw1/AHB_UART/dv/sim
-
+Step 1 : Change Directory to /aurora/ips/uart/dv/sim
+Step 2 : Resolve bad interpretter issue using following command:
+            sed -i -e 's/\r$//' runscript.sh
+Step 3 : Set Working Directory with the following command:
+             export MY_WORKING_DIR=$PWD or setenv MY_WORKING_DIR $PWD
 Step 2 : Script can be run in 4 different modes. 
 
  i.  Batch Mode
@@ -80,10 +83,10 @@ Step 2 : Script can be run in 4 different modes.
 
 | Mode       |          Command                               | Example | 
 |------------|------------------------------------------------|---------|
-| Batch      | ./runscript.sh -b <test_name> <verbosity> | ./runscript.sh -b  uart_txd_test  UVM_NONE |
-| GUI        | ./runscript.sh -g <test_name> <verbosity> | ./runscript.sh -g  uart_txd_test  UVM_NONE |
-| Coverage   | ./runscript.sh -c <test_name> <verbosity> | ./runscript.sh -c  uart_rxd_test  UVM_NONE |
-| Regression | ./runscript.sh -r <test_list.txt>  < nth jobs > |  ./runscript.sh -r testlist.txt 5 |
+| Batch      | $(basename $0) -b -t_name <testname> -u_vrbs <verbosity> -t_out <timeout> -s_freq <100e6> -s_seed <seed> -i_divl <lower_value> -i_divh <upper_value> -f_divl <lower_value> -f_divh <upper_value> -n_rpt <no_of_repeat> | ./runscript.sh -b  uart_txd_test  UVM_NONE |
+| GUI        | $(basename $0) -g -t_name <testname> -u_vrbs <verbosity> -t_out <timeout> -s_freq <100e6> -s_seed <seed> -i_divl <lower_value> -i_divh <upper_value> -f_divl <lower_value> -f_divh <upper_value> -n_rpt <no_of_repeat> | ./runscript.sh -g  uart_txd_test  UVM_NONE |
+| Coverage   | .$(basename $0) -c -t_name <testname> -u_vrbs <verbosity> -t_out <timeout> -s_freq <100e6> -s_seed <seed> -i_divl <lower_value> -i_divh <upper_value> -f_divl <lower_value> -f_divh <upper_value> -n_rpt <no_of_repeat> | ./runscript.sh -c  uart_rxd_test  UVM_NONE |
+| Regression | $(basename $0) -r -t_list <testlist> -u_vrbs <verbosity> -t_out <timeout> -s_freq <100e6> -s_seed <seed> -i_divl <lower_value> -i_divh <upper_value> -f_divl <lower_value> -f_divh <upper_value> -n_rpt <no_of_repeat> |  ./runscript.sh -r testlist.txt 5 |
     
 Here testlist can be a text file input where several testname are written
 & nth jobs mean the number of tests will run parallely. 

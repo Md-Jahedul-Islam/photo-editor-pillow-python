@@ -61,6 +61,16 @@ To switch to a given local branch:
  Step 2: Write command : 
  
         $ source /silicon/cshrc
+        
+ Server Address: 192.168.5.90
+ 
+  Step 1: Write command : 
+ 
+        $ source /tools/script.cshrc_ius15 
+ 
+ Step 2: Write command : 
+ 
+        $ source /tools/script.cshrc
  
 ## 6. Run Script: 
 
@@ -102,4 +112,16 @@ Step 4 : Script can be run in 4 different modes.
  
  ## 6. E Manager: 
 
+
+Step 1: Write the following command to open the  EManger tool
+
+           $ emanager &
+           
+Step 2: Click setup from the pop up emanger window to setup the regression.
+
+Step 3: Press "start" button to start a regression.
+
+Step 4: After that a Start session window will pop up, from where select & open the regression.vsif file.
+
+Step 5: 
 

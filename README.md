@@ -121,19 +121,34 @@ Step 1: Write the following command to open the  EManger tool
            $emanager &
            
 Step 2: Click setup from the pop up emanger window to setup the regression.
+ 
+ ![this is a image](setup.png)
 
 Step 3: Press "start" button to start a regression.
+ 
+ ![this is a image](start.PNG)
 
 Step 4: After that a Start session dialogue box will appear, from where select & open the uart_regression.vsif file.
+ 
+ ![this is a image](Select_file.PNG)
 
-Step 5: To see the progress press refresh button & wait for progress to be 100%.
+Step 5: It will start the session. To see the progress press refresh button & wait for progress to be 100%.
  
 Step 6: To see coverage report press "vplan" and press "ok" to pop up dialogue box.
+ 
+ ![this is a image](vplan.PNG)
 
-Step 7: It will cause to apper another dialogue box called "Automatic Coverage merge", from where select (merge coverage). Also have to select the "Show this dialogue again" before press Ok.
+Step 7: It will cause to apper a dialogue box. Put a tick on the select box and press Ok.
  
+ ![this is a image](dialouge_boxset.png)
  
+Step 8: It will cause to apper another dialogue box called "Automatic Coverage merge", from where select (merge coverage). Also have to select the "Show this dialogue again" before press Ok.
  
+  ![this is a image](merge.PNG)
+ 
+* After this merged coverage window will appear.
+ 
+  ![this is a image](coverage_em.PNG)
 
 ## Author 
 

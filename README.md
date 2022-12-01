@@ -27,7 +27,7 @@ Step 1 : Copy repo-ssh-link
 
 ![this is a image](SSH.PNG)
 
-Step 2 :  Goto the directory where you want to clone git repository & Enter below command
+Step 2 :  Go to the directory where you want to clone git repository & Enter below command
 
           $ git clone <repo_ssh_link>          
           Example: $ git clone git@github.com:Md-jahedul-Ulkasemi/git_test.git
@@ -111,7 +111,7 @@ s_seed |   Specify SV Seed | random|
 t_out  |   Specify Timeout| 9200000000000|
 t_name   | Specify Testname |No Default value|
 u_vrbs  |  Specify Verbosity| UVM_MEDIUM|
-t_list  |  TestCase List | No Default Value |
+t_list  |  Specify TestCase List | No Default Value |
  
 ### Usage:
 

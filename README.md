@@ -97,6 +97,23 @@ Step 4 : Script can be run in 4 different modes.
  
  Iv. Regression Mode
  
+### Arguments Details:
+
+| Argument   |          Details                               | Default Value | 
+|------------|------------------------------------------------|---------------|
+s_freq|    System Frequency| 100e6 |
+i_divl |   Baud DIVINT Value Lower Range | 2|
+i_divh |   Baud DIVINT Value Upper Range| 65535|
+f_divl |   Baud DIVFRAC Value Lower Range| 0|
+f_divh |   Baud DIVFRAC Value Upper Range| 63|
+n_rpt |    No of Repeat - Inside Test| 1|
+s_seed |   SVV Seed | random|
+t_out  |   UVM_TIMEOUT| 9200000000000|
+t_name   | UVM_TESTNAME|No Default value|
+u_vrbs  |  UVM_VERBOSITY| UVM_MEDIUM|
+n_jobs   | No of Parallel Jobs| 1|
+t_list  |  TestCase List | No Default value |
+ 
 ### Usage:
 
 | Mode       |          Command                               | Example | 

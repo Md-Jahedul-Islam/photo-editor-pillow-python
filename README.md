@@ -101,27 +101,26 @@ Step 4 : Script can be run in 4 different modes.
 
 | Argument   |          Details                               | Default Value | 
 |------------|------------------------------------------------|---------------|
-s_freq|    System Frequency| 100e6 |
-i_divl |   Baud DIVINT Value Lower Range | 2|
-i_divh |   Baud DIVINT Value Upper Range| 65535|
-f_divl |   Baud DIVFRAC Value Lower Range| 0|
-f_divh |   Baud DIVFRAC Value Upper Range| 63|
-n_rpt |    No of Repeat - Inside Test| 1|
-s_seed |   SVV Seed | random|
-t_out  |   UVM_TIMEOUT| 9200000000000|
-t_name   | UVM_TESTNAME|No Default value|
-u_vrbs  |  UVM_VERBOSITY| UVM_MEDIUM|
-n_jobs   | No of Parallel Jobs| 1|
+s_freq|    Specify System Frequency| 100e6 |
+i_divl |   Specify Baud DIVINT Value Lower Range | 2|
+i_divh |   Specify Baud DIVINT Value Upper Range| 65535|
+f_divl |   Specify Baud DIVFRAC Value Lower Range| 0|
+f_divh |   Specify Baud DIVFRAC Value Upper Range| 63|
+n_rpt |    Specify No of Repeat - Inside Test| 1|
+s_seed |   Specify SV Seed | random|
+t_out  |   Specify Timeout| 9200000000000|
+t_name   | Specify Testname |No Default value|
+u_vrbs  |  Specify Verbosity| UVM_MEDIUM|
 t_list  |  TestCase List | No Default Value |
  
 ### Usage:
 
 | Mode       |          Command                               | Example | 
 |------------|------------------------------------------------|---------|
-| Batch      | $./runscript.sh -b -t_name < testname > -u_vrbs < verbosity > -t_out < timeout > -s_freq <100e6> -s_seed < seed > -i_divl < lower_value > -i_divh < upper_value > -f_divl < lower_value > -f_divh < upper_value > -n_rpt < no_of_repeat > | ./runscript.sh -b -t_name uart_txd_test -u_vrbs UVM_NONE -t_out 980000000 -s_freq 100e6 -s_seed random -i_divl 650 -i_divh 2700 -f_divl 3 -f_divh 16 -n_rpt 5 |
-| GUI        | $./runscript.sh -g -t_name < testname > -u_vrbs < verbosity > -t_out < timeout > -s_freq <100e6> -s_seed < seed > -i_divl < lower_value > -i_divh < upper_value > -f_divl < lower_value > -f_divh < upper_value > -n_rpt < no_of_repeat > | ./runscript.sh -g -t_name uart_txd_test -u_vrbs UVM_NONE -t_out 92000000 -s_freq 100e6 -s_seed random -i_divl 650 -i_divh 2700 -f_divl 3 -f_divh 16 -n_rpt 8 |
-| Coverage   | $./runscript.sh -c -t_name < testname > -u_vrbs < verbosity > -t_out < timeout > -s_freq <100e6> -s_seed < seed > -i_divl < lower_value > -i_divh < upper_value > -f_divl < lower_value > -f_divh < upper_value > -n_rpt < no_of_repeat > | ./runscript.sh -c -t_name uart_rxd_test -u_vrbs UVM_NONE -t_out 82000000000 -s_freq 100e6 -s_seed random -i_divl 650 -i_divh 2700 -f_divl 3 -f_divh 16 -n_rpt 10 |
-| Regression | $./runscript.sh) -r -t_list < testlist > -u_vrbs < verbosity > -t_out < timeout > -s_freq <100e6> -s_seed < seed > -i_divl < lower_value > -i_divh < upper_value > -f_divl < lower_value > -f_divh < upper_value > -n_rpt < no_of_repeat > |  ./runscript.sh -r testlist.txt -u_vrbs UVM_NONE -t_out 82000000000 -s_freq 100e6 -s_seed random -i_divl 650 -i_divh 2700 -f_divl 3 -f_divh 16 -n_rpt 10 |
+| Batch      | $./runscript.sh -b -t_name < testname > -u_vrbs < verbosity > -t_out < timeout > -s_freq <100e6> -s_seed < seed > -i_divl < lower_value > -i_divh < upper_value > -f_divl < lower_value > -f_divh < upper_value > -n_rpt < no_of_repeat > | ./runscript.sh -b -t_name uart_txd_test -u_vrbs UVM_MEDIUM -t_out 9200000000000 -s_freq 100e6 -s_seed random -i_divl 2 -i_divh 65535 -f_divl 0 -f_divh 63 -n_rpt 1 |
+| GUI        | $./runscript.sh -g -t_name < testname > -u_vrbs < verbosity > -t_out < timeout > -s_freq <100e6> -s_seed < seed > -i_divl < lower_value > -i_divh < upper_value > -f_divl < lower_value > -f_divh < upper_value > -n_rpt < no_of_repeat > | ./runscript.sh -g -t_name uart_txd_test -u_vrbs UVM_MEDIUM -t_out 9200000000000 -s_freq 100e6 -s_seed random -i_divl 2 -i_divh 65535 -f_divl 0 -f_divh 63 -n_rpt 1 |
+| Coverage   | $./runscript.sh -c -t_name < testname > -u_vrbs < verbosity > -t_out < timeout > -s_freq <100e6> -s_seed < seed > -i_divl < lower_value > -i_divh < upper_value > -f_divl < lower_value > -f_divh < upper_value > -n_rpt < no_of_repeat > | ./runscript.sh -c -t_name uart_rxd_test -u_vrbs UVM_MEDIUM -t_out 9200000000000 -s_freq 100e6 -s_seed random -i_divl 2 -i_divh 65535 -f_divl 0 -f_divh 63 -n_rpt 1 |
+| Regression | $./runscript.sh) -r -t_list < testlist > -u_vrbs < verbosity > -t_out < timeout > -s_freq <100e6> -s_seed < seed > -i_divl < lower_value > -i_divh < upper_value > -f_divl < lower_value > -f_divh < upper_value > -n_rpt < no_of_repeat > |  ./runscript.sh -r -t_list testlist.txt -u_vrbs UVM_MEDIUM -t_out 9200000000000 -s_freq 100e6 -s_seed random -i_divl 2 -i_divh 65535 -f_divl 0 -f_divh 63 -n_rpt 1 |
     
  * Here testlist can be a text file input where several testname are written. 
 

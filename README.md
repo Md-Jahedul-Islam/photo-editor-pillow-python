@@ -112,22 +112,22 @@ t_out  |   UVM_TIMEOUT| 9200000000000|
 t_name   | UVM_TESTNAME|No Default value|
 u_vrbs  |  UVM_VERBOSITY| UVM_MEDIUM|
 n_jobs   | No of Parallel Jobs| 1|
-t_list  |  TestCase List | No Default value |
+t_list  |  TestCase List | No Default Value |
  
 ### Usage:
 
 | Mode       |          Command                               | Example | 
 |------------|------------------------------------------------|---------|
-| Batch      | $(basename $0) -b -t_name < testname > -u_vrbs < verbosity > -t_out < timeout > -s_freq <100e6> -s_seed < seed > -i_divl < lower_value > -i_divh < upper_value > -f_divl < lower_value > -f_divh < upper_value > -n_rpt < no_of_repeat > | ./runscript.sh -b -t_name uart_txd_test -u_vrbs UVM_NONE -t_out 980000000 -s_freq 100e6 -s_seed random -i_divl 650 -i_divh 2700 -f_divl 3 -f_divh 16 -n_rpt 5 |
-| GUI        | $(basename $0) -g -t_name < testname > -u_vrbs < verbosity > -t_out < timeout > -s_freq <100e6> -s_seed < seed > -i_divl < lower_value > -i_divh < upper_value > -f_divl < lower_value > -f_divh < upper_value > -n_rpt < no_of_repeat > | ./runscript.sh -g -t_name uart_txd_test -u_vrbs UVM_NONE -t_out 92000000 -s_freq 100e6 -s_seed random -i_divl 650 -i_divh 2700 -f_divl 3 -f_divh 16 -n_rpt 8 |
-| Coverage   | .$(basename $0) -c -t_name < testname > -u_vrbs < verbosity > -t_out < timeout > -s_freq <100e6> -s_seed < seed > -i_divl < lower_value > -i_divh < upper_value > -f_divl < lower_value > -f_divh < upper_value > -n_rpt < no_of_repeat > | ./runscript.sh -c -t_name uart_rxd_test -u_vrbs UVM_NONE -t_out 82000000000 -s_freq 100e6 -s_seed random -i_divl 650 -i_divh 2700 -f_divl 3 -f_divh 16 -n_rpt 10 |
-| Regression | $(basename $0) -r -t_list < testlist > -u_vrbs < verbosity > -t_out < timeout > -s_freq <100e6> -s_seed < seed > -i_divl < lower_value > -i_divh < upper_value > -f_divl < lower_value > -f_divh < upper_value > -n_rpt < no_of_repeat > |  ./runscript.sh -r testlist.txt -u_vrbs UVM_NONE -t_out 82000000000 -s_freq 100e6 -s_seed random -i_divl 650 -i_divh 2700 -f_divl 3 -f_divh 16 -n_rpt 10 |
+| Batch      | $./runscript.sh -b -t_name < testname > -u_vrbs < verbosity > -t_out < timeout > -s_freq <100e6> -s_seed < seed > -i_divl < lower_value > -i_divh < upper_value > -f_divl < lower_value > -f_divh < upper_value > -n_rpt < no_of_repeat > | ./runscript.sh -b -t_name uart_txd_test -u_vrbs UVM_NONE -t_out 980000000 -s_freq 100e6 -s_seed random -i_divl 650 -i_divh 2700 -f_divl 3 -f_divh 16 -n_rpt 5 |
+| GUI        | $./runscript.sh -g -t_name < testname > -u_vrbs < verbosity > -t_out < timeout > -s_freq <100e6> -s_seed < seed > -i_divl < lower_value > -i_divh < upper_value > -f_divl < lower_value > -f_divh < upper_value > -n_rpt < no_of_repeat > | ./runscript.sh -g -t_name uart_txd_test -u_vrbs UVM_NONE -t_out 92000000 -s_freq 100e6 -s_seed random -i_divl 650 -i_divh 2700 -f_divl 3 -f_divh 16 -n_rpt 8 |
+| Coverage   | $./runscript.sh -c -t_name < testname > -u_vrbs < verbosity > -t_out < timeout > -s_freq <100e6> -s_seed < seed > -i_divl < lower_value > -i_divh < upper_value > -f_divl < lower_value > -f_divh < upper_value > -n_rpt < no_of_repeat > | ./runscript.sh -c -t_name uart_rxd_test -u_vrbs UVM_NONE -t_out 82000000000 -s_freq 100e6 -s_seed random -i_divl 650 -i_divh 2700 -f_divl 3 -f_divh 16 -n_rpt 10 |
+| Regression | $./runscript.sh) -r -t_list < testlist > -u_vrbs < verbosity > -t_out < timeout > -s_freq <100e6> -s_seed < seed > -i_divl < lower_value > -i_divh < upper_value > -f_divl < lower_value > -f_divh < upper_value > -n_rpt < no_of_repeat > |  ./runscript.sh -r testlist.txt -u_vrbs UVM_NONE -t_out 82000000000 -s_freq 100e6 -s_seed random -i_divl 650 -i_divh 2700 -f_divl 3 -f_divh 16 -n_rpt 10 |
     
  * Here testlist can be a text file input where several testname are written. 
 
- * Script can be run with only the follow argument. Rest of the arguments are optional.
+ * Script can be run with only the follow arguments. Rest of the arguments are optional.
  
-            $(basename $0) -<b/g/c> -t_name <testname>
+            ./runscript.sh -<b/g/c> -t_name <testname>
  
  
  ## 6. eManager: 

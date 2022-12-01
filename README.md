@@ -45,14 +45,14 @@ To list all local branches: ( current branch)
       
             $ git branch
 
-## 4. checkout to created branch
+## 4. Checkout to Created Branch
 
 To switch to a given local branch:
      
        $ git checkout  <branch_name>
        Example: $ git checkout  dv_sim_branch
      
-## 5. load Tools on Server
+## 5. Load Tools on Server
 
  Server Address: 192.168.10.96
  
@@ -108,12 +108,12 @@ Step 4 : Script can be run in 4 different modes.
     
  * Here testlist can be a text file input where several testname are written. 
 
- * Script can be run with only the follow argument. Rest of the arguments are set default value in script.
+ * Script can be run with only the follow argument. Rest of the arguments are optional.
  
             $(basename $0) -<b/g/c> -t_name <testname>
  
  
- ## 6. E Manager: 
+ ## 6. eManager: 
 
 
 Step 1: Write the following command to open the  EManger tool
@@ -126,7 +126,7 @@ Step 2: Click setup from the pop up emanger window to setup the regression.
 
 Step 3: Press "start" button to start a regression.
  
- ![this is a image](start.PNG)
+ ![this is a image](start.png)
 
 Step 4: After that a Start session dialogue box will appear, from where select & open the uart_regression.vsif file.
  
@@ -144,11 +144,11 @@ Step 7: It will cause to apper a dialogue box. Put a tick on the select box and 
  
 Step 8: It will cause to apper another dialogue box called "Automatic Coverage merge", from where select (merge coverage). Also have to select the "Show this dialogue again" before press Ok.
  
-  ![this is a image](merge.PNG)
+  ![this is a image](merge.png)
  
 * After this merged coverage window will appear.
- 
-  ![this is a image](coverage_em.PNG)
+
+
 
 ## Author 
 

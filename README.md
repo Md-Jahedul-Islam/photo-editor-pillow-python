@@ -164,8 +164,16 @@ Step 8: It will cause to apper another dialogue box called "Automatic Coverage m
  
 * After this merged coverage window will appear.
 
+## Run Mini Regression
 
+Steo 1: To run mini regression use the following command:
 
+         ./runscript.sh -r -t_list mini_regression_testlist.txt -u_vrbs UVM_NONE -s_freq 100e6 -i_divl 2 -i_divh 2 -n_rpt 1 
+         
+Step 2: To run eManager follow the same above steps for eManafer, except step 4. At Start session dialogue box select & open the uart_mini_regression.vsif file.
+   
+   ![this is a image](mini_regression.png)
+   
 ## Author 
 
  + Name  : Mahade Hasan
